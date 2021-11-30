@@ -1,0 +1,4 @@
+# Project exclude paths
+/.idea/
+/out/
+/DatabasLab3.iml
