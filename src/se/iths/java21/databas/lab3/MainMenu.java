@@ -11,13 +11,13 @@ public class MainMenu {
     private final Command[] commands = new Command[8];
 
     public MainMenu() {
-        commands[1] = () -> DBCommands.addArtist();
-        commands[2] = () -> DBCommands.deleteArtist();
-        commands[3] = () -> DBCommands.updateArtist();
-        commands[4] = () -> DBCommands.showAll();
-        commands[5] = () -> DBCommands.findByID();
-        commands[6] = () -> DBCommands.findByAge();
-        commands[7] = () -> DBCommands.findByName();
+        commands[1] = DBCommands::addArtist;
+        commands[2] = DBCommands::deleteArtist;
+        commands[3] = DBCommands::updateArtist;
+        commands[4] = DBCommands::showAll;
+        commands[5] = DBCommands::findByID;
+        commands[6] = DBCommands::findByAge;
+        commands[7] = DBCommands::findByName;
         commands[0] = this::shutDown;
     }
 
