@@ -4,10 +4,7 @@ import se.iths.java21.databas.lab3.database.DBCommands;
 import se.iths.java21.databas.lab3.tools.Command;
 import se.iths.java21.databas.lab3.tools.InputHandler;
 
-import java.util.Scanner;
-
 public class MainMenu {
-    private final Scanner scanner = new Scanner(System.in);
     private final Command[] commands = new Command[8];
 
     public MainMenu() {
@@ -33,11 +30,11 @@ public class MainMenu {
 
     private void printMenuOptions() {
         System.out.println("""
-                
+                                
                         +--------+ +-----------+ +-----------+ +-------------+ +---------------+ +----------------+ +-----------------+ +---------+
                 ARTISTS | 1. Add | | 2. Delete | | 3. Update | | 4. Show All | | 5. Find by ID | | 6. Find by Age | | 7. Find by Name | | 0. Exit |
                         +--------+ +-----------+ +-----------+ +-------------+ +---------------+ +----------------+ +-----------------+ +---------+
-                
+                                
                 Gör ditt menyval genom att skriva SIFFRAN och sedan trycka ENTER!
                 ↓ Skriv här ↓""");
     }

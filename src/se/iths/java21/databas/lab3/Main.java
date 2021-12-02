@@ -1,6 +1,5 @@
 package se.iths.java21.databas.lab3;
 
-
 import se.iths.java21.databas.lab3.database.DBCommands;
 
 public class Main {
